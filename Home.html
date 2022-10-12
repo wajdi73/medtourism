@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/Home.css">
+	<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" 
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" 
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--Script-->
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+<!--section scroll-->
+    <header>
+		<button onclick="beginFunction()" id="myBtn" title="Go to top">CLICK TO BEGIN</button>
+		<script>
+            // When the user clicks on the button, scroll to the top of the document
+            function beginFunction() {
+              document.body.scrollTop = 680;
+              document.documentElement.scrollTop = 680;
+            }
+            </script>
+
+        <button onclick="topFunction()" id="top" title="Go to top"> <i class="fas fa-chevron-up"></i></button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("top");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+            </script>
+		
+        <ul>
+		
+<!--Logo--Signin-Signup-->
+		<div class="navbar__container">
+		    <div id="logobox">
+			
+                <li><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/Home.html"><img src="image/logo2.jpeg" alt="" width="400px"></a></li>
+            </div>
+			
+        </div>
+            <div class="Sign">
+                <li><select name="Lang" id="Lang" style="margin-top: -5px;">
+                    <option><a href="#">English</a></option>
+                    <option><a href="#">عربية</a></option>
+                    <option><a href="#">Français</a></option>
+                </select></li>
+                <li><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/SignUp.html">Sign Up</a></li>
+                <li><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/LogIn.html#">Login</a></li>
+            </div><br><br>
+            <button class="makeAppointment" style="float: right;"><a href="appointment.html"> Make Appointment <i class="fas fa-chevron-right"></i></a></button>
+			
+	<!--Navbar Section-->
+	<nav class="navbar">
+	
+    <!--NAVIGATION MENUS-->	
+    <ul class="nav-links">
+    <!--USING CHEKBOXHACK-->	
+    <input type="checkbox"
+	id="checkbox_toggle"/>
+	  <label for="checkbox_toggle" class="hamburger">&#9776;
+	  </label>
+	<!--NAVIGATION MENUS-->
+            <div class="menu">
+                
+				<li class="home"><a href="#" style="padding: 7px 75px;"><i class="fas fa-home"></i> Home <i class="fas fa-caret-down"></i> </a>
+					<!--DROPDwON MENU-->
+                        <ul class="dropdown">
+                            <li><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/About.html">About us</a></li>
+                            <li><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/What-we-treat.html">Partner</a></li>
+                        </ul>
+                </li>
+				
+                <li class="Doctors"><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/Doctors.html" ><i class="fas fa-user-md"></i> Find Doctors </i></a>
+                        <ul class="dropdown">                           
+                            
+                        </ul>
+                </li>
+                <li class="Centre"><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/Thalasso.html" ><i class="fas fa-spa"></i> Thalasso </a> 
+                        <ul class="dropdown">                            
+                            
+                        </ul>
+                </li>
+                <li class="clinics"><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/clinics.html" ><i class="fas fa-clinic-medical"></i> Clinics </a> 
+                        <ul class="dropdown">                            
+                            
+                        </ul>
+                </li>
+				<li class="page"><a href="#"><i class="fas fa-pager"></i> Page </i></a>
+					<!--DROPDwON MENU-->
+                        <ul class="dropdown"> 
+                            <li><a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/Healthcare.html">Healthcare</a></li>						
+                         
+                        </ul>
+                </li>
+                <li class="service"><a href="#"><i class="fas fa-hand-holding-medical"></i> Services Medical <i class="fas fa-caret-down"></i></a> 
+					<!--DROPDwON MENU-->
+                        <ul class="dropdown">
+                            <li><a href="#">Laboratory</a></li>
+                            <li><a href="#">Pharmacy</a></li>
+                        </ul>
+                </li>
+                </ul>
+            </div>
+        </ul>
+	</div>
+	</ul>
+	<div class="search">
+        <p style=" font-size: 28px;font-family: georgie; color: green; font-weight: bolder;margin:50px 0px 0px 10%;">I'm  Looking For...</p>
+		<br>
+        <li><button id="btn"><i class="fas fa-search"></i> Search</button></li>
+        <li><input list="browsers" name="browser" id="browser" placeholder="City" oninput="hideList(this,'browsers')"></li>
+        <li><datalist id="" class="browsers">
+                <option value="Tunis">
+                <option value="Sousse">
+                <option value="Sfax">
+                <option value="Monastir">
+                <option value="Djerba">
+            </datalist>
+        </li>
+        <li><input list="browsers2" name="browser" id="browser2" placeholder="Find type of treatment" oninput="hideList(this,'browsers2')"></li>
+        <li><datalist id="" class="browsers2">
+                <option value="Dental implants">
+                <option value="Laser teeth whitening"></option>
+                <option value="Regular teeth cleaning"></option>
+                <option value="Dentistry and orthodontics"></option>
+                <option value="Root canal treatment"></option>
+                <option value="Urology"></option>
+                <option value="Orthopedics"></option>
+                <option value="Plastic surgery"></option>
+                <option value="Ophtalmology"></option>
+                <option value="Male infertility"></option>
+                <option value="Female infertility"></option>
+                <option value="Massage"></option>
+                <option value="Wrinkles removal"></option>
+                <option value="Laser lipolysis"></option>
+                <option value="Face lift surgery"></option>
+                <option value="Facial peels"></option>
+                <option value="Crown-porcelain/ceramic"></option>
+            </datalist>
+        </li>
+    </div>
+    <img src="image/0002.png" style="width: 100%">
+	
+    </header>
+    
+    <section>
+        
+        <nav>
+            <h3>Location Clinics</h3>
+            <div class="post-slider">
+                <i class="fas fa-chevron-left prev"></i>
+                <i class="fas fa-chevron-right next"></i>
+                <div class="post-wrapper">
+                    <div class="post">
+                        <article>
+                            <img src="image/clinics1.png" class="slider-image"> 
+                            <div class="post-info">
+                            <h2>Clinique  badar</h2>
+                            <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                            <a href="#"><button class="more">Get Appointement <i class="fas fa-chevron-right"></i></button></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="post">
+                        <article>
+                            <img src="image/clinics2.jpg" class="slider-image"> 
+                            <div class="post-info">
+                            <h2>Clinique  badar</h2>
+                            <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                            <a href="#"><button class="more">Get Appointement <i class="fas fa-chevron-right"></i></button></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="post">
+                        <article>
+                            <img src="image/clinics3.jpg" class="slider-image"> 
+                            <div class="post-info">
+                            <h2>Clinique  badar</h2>
+                            <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                            <a href="#"><button class="more">Get Appointement <i class="fas fa-chevron-right"></i></button></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="post">
+                        <article>
+                            <img src="image/clinics4.jpg" class="slider-image"> 
+                            <div class="post-info">
+                            <h2>Clinique  badar</h2>
+                            <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                            <a href="#"><button class="more">Get Appointement <i class="fas fa-chevron-right"></i></button></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="post">
+                        <article>
+                            <img src="image/clinics2.jpg" class="slider-image"> 
+                            <div class="post-info">
+                            <h2>Clinique  badar</h2>
+                            <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                            <a href="#"><button class="more">Get Appointement <i class="fas fa-chevron-right"></i></button></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <h3>Location Thalasso</h3>
+            <div>
+                <div class="post-slider">
+                    <i class="fas fa-chevron-left prev2"></i>
+                    <i class="fas fa-chevron-right next2"></i>
+                    <div class="post-wrapper2">
+                        <div class="post">
+                            <article>
+                                <img src="image/TABARKA.png" class="slider-image"> 
+                                <div class="post-info">
+                                <h2>Clinique  badar</h2>
+                                <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                                <a href="#"><button class="more">Book Now <i class="fas fa-chevron-right"></i></button></a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/TABARKA.png" class="slider-image"> 
+                                <div class="post-info">
+                                <h2>Clinique  badar</h2>
+                                <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                                <a href="#"><button class="more">Book Now <i class="fas fa-chevron-right"></i></button></a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/TABARKA.png" class="slider-image"> 
+                                <div class="post-info">
+                                <h2>Clinique  badar</h2>
+                                <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                                <a href="#"><button class="more">Book Now <i class="fas fa-chevron-right"></i></button></a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/TABARKA.png" class="slider-image"> 
+                                <div class="post-info">
+                                <h2>Clinique  badar</h2>
+                                <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                                <a href="#"><button class="more">Book Now <i class="fas fa-chevron-right"></i></button></a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/TABARKA.png" class="slider-image"> 
+                                <div class="post-info">
+                                <h2>Clinique  badar</h2>
+                                <p>Adresse:route de Soukra<br>Telephone:74000000</p>
+                                <a href="#"><button class="more">Book Now <i class="fas fa-chevron-right"></i></button></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Doctors</h3>
+            <div class="doctor">
+                <div class="post-slider">
+                    <i class="fas fa-chevron-left prev3"></i>
+                    <i class="fas fa-chevron-right next3"></i>
+                    <div class="post-wrapper3">
+                        <div class="post">
+                            <article>
+                                <img src="image/slider-facebook-new-profile.png" class="slider-image" >
+                                <p class="post-info">First, second name<br>
+                                    Center Urbain Nord Clinic les jasmin<br> 
+                                    Tunis, 1082<br>
+                                    (216) ********
+                                </p>
+                                <a href="#"><button class="more">Get Appointment <i class="fas fa-chevron-right"></i></button></a>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/slider-facebook-new-profile.png" class="slider-image" >
+                                <p class="post-info">First, second name<br>
+                                    Center Urbain Nord Clinic les jasmin<br> 
+                                    Tunis, 1082<br>
+                                    (216) ********
+                                </p> 
+                                <a href="#"><button class="more">Get Appointment <i class="fas fa-chevron-right"></i></button></a>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/slider-facebook-new-profile.png" class="slider-image" >
+                                <p class="post-info">First, second name<br>
+                                    Center Urbain Nord Clinic les jasmin<br> 
+                                    Tunis, 1082<br>
+                                    (216) ********
+                                </p> 
+                                <a href="#"><button class="more">Get Appointment <i class="fas fa-chevron-right"></i></button></a>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/slider-facebook-new-profile.png" class="slider-image" >
+                                <p class="post-info">First, second name<br>
+                                    Center Urbain Nord Clinic les jasmin<br> 
+                                    Tunis, 1082<br>
+                                    (216) ********
+                                </p> 
+                                <a href="#"><button class="more">Get Appointment <i class="fas fa-chevron-right"></i></button></a>
+                            </article>
+                        </div>
+                        <div class="post">
+                            <article>
+                                <img src="image/slider-facebook-new-profile.png" class="slider-image" >
+                                <p class="post-info">First, second name<br>
+                                    Center Urbain Nord Clinic les jasmin<br> 
+                                    Tunis, 1082<br>
+                                    (216) ********
+                                </p> 
+                                <a href="#"><button class="more">Get Appointment <i class="fas fa-chevron-right"></i></button></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+            
+            <h1 style="margin-top: -70px;">Specific Medical Treatments</h1>
+			<br><br>
+            <div class="Specific">
+			
+        <article>
+				    <img src="image/tr01.jpg" class="slider-image"> 
+                    <h2>Cosmetics Surgery</h2>
+                    <p style="font-family: Times New Roman; font-weight: inherit; font-size:18px;">Cosmetic surgery is a unique discipline of medicine focused on enhancing 
+                        appearance through surgical and medical techniques. Cosmetic surgery can be 
+                        performed on all areas of the head, neck and body. ... Plastic surgery is 
+                        intended to correct dysfunctional areas of the body and is reconstructive in 
+                        nature.
+                    </p>
+                    <a href="#"><input type="button" name="More" value="Read More"></a>
+        </article>
+        <article>
+				    <img src="image/tr02.jpg" class="slider-image"> 
+                    <h2>Obesity Surgery</h2>
+                    <p style="font-family: Times New Roman; font-weight: inherit; font-size:18px;">Obesity Surgery is a monthly peer-reviewed medical journal covering bariatric 
+                        surgery. It was established in 1991 and is published by Springer Science+Business 
+                        Media. It is the official journal of the Internationa Federation for the Surgery 
+                        of Obesity and Metabolic Disorders. The editor-in-chief is Scott Shikora.
+                    </p>
+                    <a href="#"><input type="button" name="More" value="Read More"></a>
+        </article>
+        <article>
+				    <img src="image/tr03.jpg" class="slider-image"> 
+                    <h2>Ophthalmology</h2>
+                    <p style="font-family: Times New Roman; font-weight: inherit; font-size:18px;">Ophthalmologyis a branch of medicine and surgery which deals with the diagnosis 
+                        and treatment of eye disorders. An ophthalmologist is a specialist in 
+                        ophthalmology. The credentials include a degree in medicine, followed by 
+                        additional four to five years of ophthalmology residency training. Ophthalmology 
+                        residency training programs may require a one-year pre-residency training in 
+                        internal medicine, pediatrics, or general surgery. 
+                    </p>
+                    <a href="#"><input type="button" name="More" value="Read More"></a>
+        </article>
+        <article>
+				    <img src="image/tr04.jpg" class="slider-image"> 
+                    <h2>Orthopadics</h2>
+                    <p style="font-family: Times New Roman; font-weight: inherit; font-size:18px;">Orthopedics is a medical specialty that focuses on the diagnosis, correction, 
+                        prevention, and treatment of patients with skeletal deformities - disorders of 
+                        the bones, joints, muscles, ligaments, tendons, nerves and skin. ... The 
+                        physicians who specialize in this area are called orthopedic surgeons or 
+                        orthopedists.
+                    </p>
+                    <a href="#"><input type="button" name="More" value="Read More"></a>
+        </article><br><br>
+            </div>
+            <div class="surgery" style="margin-top: -3%;">
+                <ul>
+                    <li>Facial surgery</li>
+                    <li>Brut surgery</li>
+                    <li>Sihoute surgery</li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <br><br>
+<!-- Footer Section-->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/About.html">How it works</a> <a href="#">Testimonials</a>
+            <a href="#">Careers</a> <a href="#">Terms of Service</a>
+          </div>
+		  <div class="footer__link--items">
+            <h2>Services</h2>
+            <a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/clinics.html">Clinics</a> <a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/Thalasso.html">Thalasso</a>
+            <a href="file:///C:/Users/user/Desktop/TourismMedical/FrontEnd/web/Doctors.html">Doctors</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+		    
+            <a href="/" id="footer__logo">World Medical Tourism</a>
+          </div>
+          <p class="website__rights">©2021. All rights reserved</p>
+          <div class="social__icons">       
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+ 	
+      </section>
+    </div>
+	
+ 
+</body>
+</html>

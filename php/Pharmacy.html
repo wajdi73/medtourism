@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/Home.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" 
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" 
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--Script-->
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <div id="logobox">
+                <li><img src="image/logo2.jpeg" alt="" width="400px"></li>
+            </div>
+            <div class="menu" style="margin: 0px;">
+                <ul class="links">
+                    <li class="Contact"><a href="#"><i class="fas fa-hand-holding-medical"></i> Services Medical <i class="fas fa-caret-down"></i></a> 
+                        <ul class="submenu">
+                            <li><a href="#">Laboratory</a></li>
+                            <li><a href="#">Pharmacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="Pharmacy"><a href="#"><i class="fas fa-pager"></i> Page <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="Doctors"><a href="#"><i class="fas fa-user-md"></i> Doctors <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Doctors</a></li>
+                            <li><a href="#">Doctors</a></li>
+                            <li><a href="#">Doctors</a></li>
+                        </ul>
+                    </li>
+                    <li class="Centre"><a href="#"><i class="fas fa-spa"></i> Thalasso </i></a> 
+                        <ul class="submenu">
+                            <li><a href="#">Thalasso</a></li>
+                            <li><a href="#">Thalasso</a></li>
+                            <li><a href="#">Thalasso</a></li>
+                        </ul>
+                    </li>
+                    <li class="clinics"><a href="#"><i class="fas fa-clinic-medical"></i> Clinics </i></a> 
+                        <ul class="submenu">
+                            <li><a href="#">Clinics</a></li>
+                            <li><a href="#">Clinics</a></li>
+                            <li><a href="#">Clinics</a></li>
+                        </ul>
+                    </li>
+                    <li class="home"><a href="#" style="padding: 7px 75px;"><i class="fas fa-home"></i> Home <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">What we treat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </header>
+    <div class="search">
+        <p style="margin:100px 0px 10px 15%;">I'm  Looking For...</p>
+        <li><button id="btn"><i class="fas fa-search"></i> Search</button></li>
+        <li><input list="browsers" name="browser" id="browser" placeholder="City"></li>
+        <li><datalist id="browsers" >
+                <option value="Tunis">
+                <option value="Sousse">
+                <option value="Sfax">
+                <option value="Monastir">
+                <option value="Djerba">
+            </datalist>
+        </li>
+        <li><input list="browsers2" name="browser" id="browser2" placeholder="Find Pharmacy"></li>
+        <li><datalist id="browsers2">
+                <option value="Find Pharmacy">
+                <option value="Find Pharmacy">
+                <option value="Find Pharmacy">
+                <option value="Find Pharmacy">
+                <option value="Find Pharmacy">
+            </datalist>
+        </li>      
+    </div>
+    <img src="image/ban00123.png" style="margin-left: -1%; width: 101%">
+    <section>
+        <aside>
+            <img src="image/th.jpg.jpg">
+            <img src="image/logo.png">
+            <p>Sign up to receive the newsletters in your mailbox.</p>
+            <img id="logoemail" src="image/Image5-150x150.png">
+            <div class="mail">
+                <li><input type="email" id="email" placeholder="Your email" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$ required></li>
+                <li><input type="submit" id="send" name="send" value="Send"></li>
+            </div>
+        </aside>
+        <nav>
+            <h1>Pharmacy</h1>
+            <article class="magazine">
+                <li><img src="image/location-arizona-2col.png"></li>
+                <li><div class="info">
+                        <h2>Pharmacy city </h2>
+                        <p>Adresse:Route Marsa Tunis<br>Telephone:74000000</p>
+                        <a href="#"><button class="more">More <i class="fas fa-chevron-right"></i></button></a>
+                    </div>
+                </li>
+            </article>
+            <article class="magazine">
+                <li><img src="image/location-arizona-2col.png"></li>
+                <li><div class="info">
+                        <h2>Pharmacy city </h2>
+                        <p>Adresse:Route Marsa Tunis<br>Telephone:74000000</p>
+                        <a href="#"><button class="more">More <i class="fas fa-chevron-right"></i></button></a>
+                    </div>
+                </li>
+            </article>
+            <article class="magazine">
+                <li><img src="image/location-arizona-2col.png"></li>
+                <li><div class="info">
+                        <h2>Pharmacy city </h2>
+                        <p>Adresse:Route Marsa Tunis<br>Telephone:74000000</p>
+                        <a href="#"><button class="more">More <i class="fas fa-chevron-right"></i></button></a>
+                    </div>
+                </li>
+            </article>
+            <article class="magazine">
+                <li><img src="image/location-arizona-2col.png"></li>
+                <li><div class="info">
+                        <h2>Pharmacy city </h2>
+                        <p>Adresse:Route Marsa Tunis<br>Telephone:74000000</p>
+                        <a href="#"><button class="more">More <i class="fas fa-chevron-right"></i></button></a>
+                    </div>
+                </li>
+            </article>
+        </nav>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <ul style=" width: 39%;" >
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Clinics</a></li>
+                <li><a href="#">Doctors</a></li>
+            </ul>
+            <ul style=" width: 39%;">
+                <li><a href="#">Thalasso Center</a></li>
+                <li><a href="#">Pharmacy</a></li>
+                <li><a href="#">Make an oppointement</a></li>
+            </ul>
+            <ul style="width: 10%;">
+                <li><a href="#">What we treat</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="adresse">
+            <p>Adresse: Route de soukra Tunis 1001</p>
+            <p>E-mail: <a href="mailto:Conatct@tourismmedical.com">Conatct@tourismmedical.com</a></p>
+            <p>Phone: 71000000</p>
+        </div>
+        <div class="follow">
+            <li><h3>Follow us</h3></li>
+            <li><div class="social">
+                    <img src="image/fb.png">
+                    <img src="image/twi.png">
+                    <img src="image/inst.png">
+                    <img src="image/yout.png">
+                </div>
+            </li>
+        </div>
+        <div class="footer-bottom">
+            <li><img src="image/smallogo.png"></li>
+            <li><p>Copyright © 2020 World Medical Tourism | <a href="http://smartbrandweb.com">Development and Management from Smart Brand Web</a></p></li> 
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>
